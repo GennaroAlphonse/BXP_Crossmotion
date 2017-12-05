@@ -1,0 +1,110 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="BXP_MasterPage.master.vb" Inherits="BXP_Crossmotion.BXP_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>CROSSMOTION</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="../BXP_StyleSheet/BXP_SS_General.css" rel="stylesheet" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <asp:Image ID="Image1" runat="server" Width="200px" ImageUrl="~/BXP_Image/BXP_Empresa/logo.png" />
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a>
+                                <asp:Button ID="Btn_Inicio" runat="server" Text="Home" CssClass="Btn_Menu" />
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <asp:Button ID="Btn_Cotizacion" runat="server" Text="Sales Quotation" CssClass="Btn_Menu" />
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <asp:Button ID="Btn_Delivery" runat="server" Text="Sales Order" CssClass="Btn_Menu" />
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <asp:Button ID="BtnResumen" runat="server" Text="List of quotes" CssClass="Btn_Menu" />
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <asp:Button ID="Btn_ExpedientesHistoricos" runat="server" Text="Expedientes historicos" CssClass="Btn_Menu" />
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <asp:Button ID="Btn_Tracking" runat="server" Text="Tracking" CssClass="Btn_Menu" />
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <asp:Button ID="Button1" runat="server" Text="Autorizacion" CssClass="Btn_Menu" />
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <asp:Button ID="Btn_Salir" runat="server" Text="Exit" CssClass="Btn_Menu" />
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+        <asp:Panel ID="Pnl_Background" runat="server" CssClass="Css_Background"></asp:Panel>
+        <asp:Panel ID="Pnl_Message" runat="server" CssClass="Css_PnlMessage">
+            <p>
+                <asp:Label ID="Lbl_TitleError" runat="server" CssClass="Css_TitleError"></asp:Label>
+            </p>
+            <p>
+                <asp:Label ID="Lbl_MessageError" runat="server" CssClass="Css_MessageError"></asp:Label>
+            </p>
+            <p>
+                <asp:Button ID="Btn_AcceptError" runat="server" Text="Continuar" CssClass="btn btn-default Button" />
+                <asp:Button ID="BtnNo_" runat="server" Text="Salir" CssClass="btn btn-default Button" />
+            </p>
+        </asp:Panel>
+    </form>
+</body>
+</html>

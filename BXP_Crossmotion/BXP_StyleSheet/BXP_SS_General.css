@@ -1,0 +1,98 @@
+﻿/*Diseño realizado por Hugo Senties Gallegos*/
+
+.Pnl_Login{
+    max-height: 100%;
+    max-width: 420px;
+    text-align: left;
+
+    border-radius: 15px;
+    border: solid;
+    border-color: #eeeef2;
+    border-width: 3px;
+}
+
+.Button{
+    background-color: #fef09e;
+}
+
+.Button:hover{
+    background-color: #f7a629;
+}
+
+.Button:focus{
+    /*background-color: #f7a629;*/
+    background-image: -webkit-linear-gradient(Top, #FEF09E, #F7A629);
+    background-image: -moz-linear-gradient(Top, #FEF09E, #F7A629);
+    background-image: -ms-linear-gradient(Top, #FEF09E, #F7A629);
+    background-image: -o-linear-gradient(Top, #FEF09E, #F7A629);
+    background-image: linear-gradient(to Bottom, #FEF09E, #F7A629);
+}
+
+.Css_Background{
+    background-color: gray;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: .7;
+	-moz-opacity: .7;
+    -webkit-opacity: .7;
+}
+
+.Css_PnlMessage{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    height: 150px;
+    width: 300px;
+    margin: -75px 0 0 -150px;
+    border-radius: 10px;
+    border: solid;
+    border-color: gray;
+    border-width: 3px;
+    background-color: white;
+    text-align: center;
+}
+
+.Css_TitleError{
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
+}
+
+.Css_MessageError{
+    font-size: 13px;
+    color: red;
+}
+
+.Css_ButtonError{
+    width: 120px;
+    height: 25px;
+    border-radius: 10px;
+    border: solid;
+    border-color: gray;
+    border-width: 1px;
+    background-color: red;
+    color: black;
+}
+
+.Css_ButtonError:hover{
+    background-color: blue;
+    color: white;
+}
+
+.Css_PnlCorreo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 400px;
+    width: 600px;
+    margin: -200px 0 0 -300px;
+    border-radius: 10px;
+    border: solid;
+    border-color: gray;
+    border-width: 3px;
+    background-color: white;
+    text-align: center;
+}
